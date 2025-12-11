@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love!</title>
+    <style>
+        /* CSS to style the pop-up/modal */
+        body { margin: 0; background-color: #f7f7f7; font-family: 'Arial', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .birthday-modal {
+            display: block; /* Show the modal right away */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+        }
+        .modal-content {
+            background-color: #ffffff;
+            margin: 15% auto; /* Center the box */
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 1s;
+        }
+        .modal-content h1 { color: #e91e63; font-size: 2.5em; margin-bottom: 10px; }
+        .modal-content p { color: #333; font-size: 1.1em; line-height: 1.6; }
+        .close-btn { 
+            color: #aaa; float: right; font-size: 28px; font-weight: bold; 
+            text-decoration: none; position: absolute; top: 10px; right: 20px;
+        }
+        .close-btn:hover, .close-btn:focus { color: #e91e63; cursor: pointer; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+    </style>
+</head>
+<body>
+
+<div id="birthdayModal" class="birthday-modal">
+  <div class="modal-content">
+    <a href="#" class="close-btn" onclick="document.getElementById('birthdayModal').style.display='none';">&times;</a>
+    
+    <h1>Happy Birthday to My Amazing Girl! 🎂</h1>
+    <p>
+        My love, every day with you is a gift, but today is extra special because it's **your** day. You have the kindest heart, the most beautiful smile, and a way of making everything better just by being you.
+    </p>
+    <p style="font-style: italic; color: #777;">
+        I hope your day is filled with all the joy and happiness you bring into my life. I love you more than words can say.
+    </p>
+    <p>
+        **Now, close this window and come find me! Your surprise is waiting...** 😉
+    </p>
+    <p style="margin-top: 20px; color: #e91e63; font-weight: bold;">
+        Love Always,<br>
+        [Your Name]
+    </p>
+    </div>
+</div>
+
+</body>
+</html>
